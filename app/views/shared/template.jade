@@ -8,20 +8,24 @@ html(lang='en')
     link(href='/bootstrap/css/bootstrap.min.css', rel='stylesheet')
     link(href='/font-awesome/css/font-awesome.min.css', rel='stylesheet')
     link(rel='stylesheet', href='/css/style.css')
+    link(rel='stylesheet', href='/css/animate.css')
+    link(rel='icon' type='image/png' href='/img/redneck-women.png')
   body
-    include nav
-    .container-fluid
-      .row
-        .col-xs-12
-          block content
+    .mainContain
+      include nav
+      .container-fluid
+        .row
+          .col-xs-12
+            block content
 
-    script(src='/js/vendor/jquery-2.1.1.min.js')
-    script(src='/js/vendor/async.js')
-    script(src='/js/vendor/underscore-min.js')
-    script(src='/js/vendor/underscore-contrib.min.js')
-    script(src='/js/vendor/moment.min.js')
-    script(src='/bootstrap/js/bootstrap.min.js')
-    script(src='/js/user/main.js')
+      script(src='/js/vendor/jquery-2.1.1.min.js')
+      script(src='/js/vendor/async.js')
+      script(src='/js/vendor/underscore-min.js')
+      script(src='/js/vendor/underscore-contrib.min.js')
+      script(src='/js/vendor/moment.min.js')
+      script(src='/bootstrap/js/bootstrap.min.js')
+      script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCtYJhWqJxMWkjJuuiD0vR-1K1DL3o8T_0&sensor=true')
+      script(src='/js/user/main.js')
 
-    block scripts
+      block scripts
 
